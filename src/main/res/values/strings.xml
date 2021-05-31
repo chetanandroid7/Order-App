@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"> Order App</string>
+    <string name="text_date">Date:  \u0020</string>
+    <string name="text_job">Job Indicator:  \u0020</string>
+    <string name="text_service">Service Requested:  \u0020</string>
+    <string name="text_ref">Ref.No:  \u0020</string>
+
+    <string name="text_first">First Name:  \u0020</string>
+    <string name="text_last">Last Name:  \u0020</string>
+    <string name="text_phone">Phone Number:  \u0020</string>
+    <string name="text_address">Address:  \u0020</string>
+    <string name="text_city">City:  \u0020</string>
+    <string name="text_state">State:  \u0020</string>
+    <string name="finish">Finish</string>
+    <string name="text_status_co">CO</string>
+
+
+</resources>

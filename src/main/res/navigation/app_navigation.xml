@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_navigation"
+    app:startDestination="@id/listCustomerFragment">
+
+    <fragment
+        android:id="@+id/listCustomerFragment"
+        android:name="com.capp.orderapp.view.ListCustomerFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_customer_list" >
+        <action
+            android:id="@+id/action_listCustomerFragment_to_customerDetailFragment"
+            app:destination="@id/customerDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerDetailsFragment"
+        android:name="com.capp.orderapp.view.CustomerDetailsFragment"
+        android:label="fragment_customer_details"
+        tools:layout="@layout/fragment_customer_details" >
+        <action
+            android:id="@+id/action_customerDetailFragment_to_listCustomerFragment"
+            app:destination="@id/listCustomerFragment" />
+        <argument
+            android:name="customerid"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
